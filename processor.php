@@ -1,6 +1,5 @@
 
 <?php
-session_start();
 if (isset($_POST['username']) && isset($_POST['password'])) {
 
     $username = $_POST['username'];
@@ -17,8 +16,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     foreach ($users as $user) {
         if ($user['username'] === $username && $user['password'] === $password) {
             $isLoggedIn = true;
-            $_SESSION['username'] = $username;
-  //          $_COOKIE['username'] = $username;
+            setcookie("username", $username, time() + 3600);
             header("Location: createcookie.php?user=$username");
             break;
         }
