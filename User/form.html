@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <!-- Bootstrap min css file -->
+    <link rel="stylesheet" href="bootstrap-5.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap bundle min js file -->
+    <script src="bootstrap-5.3.1/js/bootstrap.bundle.js"></script>
+</head>
+
+<body class="overflow-hidden">
+    <div class="row mt-5">
+        <div class="col-3"></div>
+        <div class="col-6 card ">
+            <div class="card-header text-center fs-2">User Form</div>
+            <div class="card-body">
+                <!-- <form action="newprocessor.php" method="post"> -->
+                <form action="processor.php" method="post">
+
+                    <!-- Full Name Start -->
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingName" placeholder="name@example.com" name="fullname">
+                        <label for="floatingName">FullName</label>
+                    </div>
+                    <!-- Full Name End -->
+
+                    <!-- dob Start -->
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="floatingDOB" placeholder="name@example.com" name="dob">
+                        <label for="floatingDOB">Date of Birth</label>
+                    </div>
+                    <!-- dob End -->
+
+                    <!-- gender Start -->
+                    <div class="flex row mb-3">
+                        <div class="col-4">Gender:</div>
+                        <div class="col-2 form-check">
+                            <input class="form-check-input" type="radio" name="gender[]" id="flexRadioDefault1" value="male">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                            Male
+                        </label>
+                        </div>
+                        <div class="col-2 form-check">
+                            <input class="form-check-input" type="radio" name="gender[]" id="flexRadioDefault2" value="female">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                            FeMale
+                        </label>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                    <!-- gender End -->
+
+
+                    <!-- status Start -->
+                    <div class="flex row mb-3">
+                        <div class="col-4">Status:</div>
+                        <div class="col-2 form-check">
+                            <input class="form-check-input" type="radio" name="status[]" id="flexRadiogender" value="Mrs">
+                            <label class="form-check-label" for="flexRadiogender">
+                            Married
+                        </label>
+                        </div>
+                        <div class="col-2 form-check">
+                            <input class="form-check-input" type="radio" name="status[]" id="flexRadioStatus" value="Ms">
+                            <label class="form-check-label" for="flexRadioStatus">
+                            UnMarried
+                        </label>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                    <!-- status End -->
+
+                    <div class="row mt-4">
+                        <div class="col-3">
+                            <Button type="reset" class="p-2 w-100 bg-dark text-white">Reset</Button>
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3">
+                            <button type="submit" class="float-end p-2 w-100 bg-dark text-white">Submit</button>
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</body>
+
+</html>
