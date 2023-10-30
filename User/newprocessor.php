@@ -25,7 +25,7 @@ if(isset($_POST['fullname']) && isset($_POST['dob']) && isset($_POST['gender']) 
     }
 } else {
     echo "Some Required Data Fields seem to be Empty";
-    echo "<a href='form.html'>Back to Form</a>";
+    echo "<a href='formNormal.html'>Back to Form</a>";
 }
 
 
