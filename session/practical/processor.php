@@ -19,6 +19,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             $isLoggedIn = true;
             $_SESSION['username']=$username;
             header("Location: dashboard.php");
+            date_default_timezone_set("Asia/Colombo");
             $time=date("Y/m/d h:i:s");
             $file=fopen("user.txt","a");   
             fwrite($file,$_SESSION['username']." --- ".$time."\n");
