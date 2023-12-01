@@ -8,23 +8,24 @@ $resultsSet=mysqli_query($conn,$sql);
 
 
 //method1
-echo "----------------------array--------------------";
+//echo "----------------------array--------------------";
 //echo "</br>";
 //$array=mysqli_fetch_array($resultsSet);
 //var_dump($array);
 
 
 
-echo "</br>";
+//echo "</br>";
 //method2
-echo "----------------------assoc--------------------";
-echo "</br>";
+//echo "----------------------assoc--------------------";
+//echo "</br>";
 //$assoc=mysqli_fetch_assoc($resultsSet);
 //var_dump($assoc);
 
 while ($row=mysqli_fetch_assoc($resultsSet)) {
     echo $row['id'],"-",$row['name'];
 }
+
 
 //4.close connection
 mysqli_close($conn);

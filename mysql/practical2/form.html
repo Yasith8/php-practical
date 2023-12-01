@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+</head>
+
+<body>
+    <form action="processor.php" method="post">
+        <fieldset>
+            <legend>Add Student</legend>
+            Name: <input type="text" name="username"><br/> NIC: <input type="text" name="nic"><br/> City :
+            <select name="city">
+                <option value="Colombo">Colombo</option>
+                <option value="Kandy">Kandy</option>
+                <option value="Jaffna">Jaffna</option>
+                <option value="Galle">Galle</option>
+            </select>
+            <button>Submit</button>
+        </fieldset>
+    </form>
+
+    <form action="filter.php" method="post">
+        <legend>Search Student</legend>
+        Search by Name: <input type="text" name="username"><br/> Search by NIC: <input type="text" name="nic"><br/> Search by City :
+        <select name="city">
+            <option value="Colombo">Colombo</option>
+            <option value="Kandy">Kandy</option>
+            <option value="Jaffna">Jaffna</option>
+            <option value="Galle">Galle</option>
+        </select>
+        <button>Search</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
