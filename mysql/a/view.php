@@ -32,8 +32,8 @@
                     echo "<td>",$row['name'],"</td>";
                     echo "<td>",$row['nic'],"</td>";
                     echo "<td>",$row['city'],"</td>";
-                    echo "<td>","Update","</td>";
-                    echo "<td><a href='d'>","Delete","</a></td>";
+                    echo "<td>","<a href='updateform.php?id=".$row['id']."'>Update","</td>";
+                    echo "<td><a href='delete.php?id=".$row['id']."'>","Delete","</a></td>";
                     echo "</tr>";
                 }
 
